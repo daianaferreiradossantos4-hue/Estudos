@@ -9,10 +9,11 @@ programa {
     idade = anoatual-anonascimento
 
     escreva("idade:  " , idade  ," anos\n")
-    se ( idade  >= 16)
+    se ( idade  >= 16){
     escreva("Pode votar \n")
-    
-   senao
+    }
+   senao{
     escreva("Não pode votar")
+   }
   }
 }

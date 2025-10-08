@@ -1,6 +1,6 @@
 programa {
-
-  real nota1,nota2,media,nome
+  cadeia nome
+  real nota1,nota2,media
   funcao inicio() {
     escreva("Nome do aluno: ")
     leia(nome)
@@ -11,6 +11,14 @@ programa {
 
     media = (nota1 + nota2)/ 2
 
-    escreva("Aluno")
+    escreva("\n A media de " , nome,  "  é ",media)
+
+    se (media >= 7 ){
+
+    escreva(" \n Bom aproveitamento  ")
+    }
+   senao{
+    escreva(" \n Nao foi um bom aproveitamento ")
+   }
   }
 }
