@@ -22,6 +22,8 @@
             <h2>
                 Sintaxe
             </h2>
+            <hr>
+            <hr>
             <p>CSS tem uma sintaxe simples, e utiliza uma série de palavras em inglês para especificar os nomes de diferentes propriedade de estilo de uma página.</p>
 
             <p>Uma instrução CSS consiste em um <strong>seletor</strong> e um <strong>bloco de declaração</strong>. Cada declaração contém uma<strong> propriedade</strong> e um <strong>valor</strong>, separados por dois pontos (:). Cada declaração é separada por ponto e vírgula (;). <sup><ins>[2]</ins></sup></p>
@@ -50,22 +52,31 @@
             <h2>Seletores</h2>
 
             <p>Definição de estilo é um conjunto de propriedades visuais para um elemento, o CSS define regras que fazem as definições de estilo casarem com um elemento ou grupo de elemento, o documento pode conter um bloco de CSS num elemento style ou usando o elemento link apontando para um arquivo externo que contenha o bloco CSS.</p>
+
             <p>Para uso com o CSS, foi criado o atributo class que todo elemento pode conter.</p>
+
             <p>As regras de casamento para o CSS são chamadas de seletores, uma definição de estilo pode ser casada com um seletor ou um grupo de seletores separados por vírgula, um seletor pode casar um elemento por:</p>
-            As regras de casamento para o CSS são chamadas de seletores, uma definição de estilo pode ser casada com um seletor ou um grupo de seletores separados por vírgula, um seletor pode casar um elemento por:
+
+            <p>As regras de casamento para o CSS são chamadas de seletores, uma definição de estilo pode ser casada com um seletor ou um grupo de seletores separados por vírgula, um seletor pode casar um elemento por:</p>
+
 
           <ul type="square">
         
 
             <li><strong>elemento do tipo</strong>: element_name { style definition; }</li>
+
             <li><strong>elemento do tipo com a classe</strong>: element_name.class_name { style definition; }</li>
+
             <li><strong>todos os elementos com a classe</strong>: .class_name { style definition; }</li>
+
             <li><strong>o elemento com o id</strong>: #id_of_element { style definition; }</li>
+
             <li><strong>casamento de um grupo</strong>: element_name_01, element_name_02, .class_name { style definition; }</li>
 
           </ul> 
 
-          <h2>Exemplos</h2>
+             <p>Exemplos</p>
+
             
                 <code>
                     p {text-align: right; color: #BA2;}<br>
@@ -75,7 +86,9 @@
                      p.minhaclasse03 .minhaclasse04 { color:#ACD; }<br>
                 </code><br>
             
-            <h1>Exemplos</h1>
+            <h2>Exemplos</h2>
+            <hr>
+            <hr>
 
             
                 <code>
@@ -97,36 +110,36 @@
 
                <p>É importante notar que nenhum <ins>navegador</ins> suporta igualmente as definições do CSS. Desta forma, o web designer deve sempre testar suas folhas de estilo em navegadores de vários fabricantes, e preferencialmente em mais de uma versão, para se certificar de que o que foi codificado realmente seja apresentado da forma desejada.</p>
 
-            <h2>Exemplo de CSS aplicado em XML</h2>
+            <h3>Exemplo de CSS aplicado em XML</h3>
 
                <p>Arquivo *.XML com ligação para uma folha de estilos em cascata:</p>
 
-&gt;?xml version="1.0" encoding="UTF-8"?&lt;
-&gt;?xml-stylesheet type="text/css" href="css.css"?&lt;
+                &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                &lt;?xml-stylesheet type="text/css" href="css.css"?&gt;
+                &lt;schedule&gt;
+                &lt;date&gt;Tuesday 20 June&lt;/date&gt;
+                &lt;/programe&gt;
+                    &lt;starts&gt;6:00&lt;/starts&gt;
+                    &lt;title&gt;News&lt;/title&gt;
+                    With Michael Smith and Fiona Tolstoy.
+                    Followed by Weather with Malcolm Stott
+                &lt;/programme&gt;
+                &lt;/programme&gt;
+                    &lt;starts&gt;6:30&lt;/starts&gt;
+                    &lt;title&gt;Regional news update&lt;/title&gt;
+                    Local news for your area.
+                &lt;/programme&gt;
+                &lt;/programme&gt;
+                    &lt;starts&gt;7:00&lt;starts&gt;
+                    &lt;title&gt;Unlikely suspect&lt;/title&gt;
+                    Whimsical romantic crime drama starring Janet
+                    Hawthorne and Percy Trumpp.
+                &lt;/programme&gt;
+                &lt;/schedule&gt;
 
- <code>
-     <schedule></schedule><br>
-       <date>Tuesday 20 June</date></schedule><br>
-         <starts>6:00</starts></schedule><br>
-         <title>News</title></schedule><br>
-         With Michael Smith and Fiona Tolstoy></schedule><br>
-         Followed by Weather with Malcolm Stott></schedule><br>
-       </programme></schedule><br>
-       <programme></schedule><br>
-         <starts>6:30</starts></schedule><br>
-         <title>Regional news update</title></schedule><br>
-         Local news for your ar></schedule><br>
-       </programme>
-       <programme>
-         <starts>7:00</starts>
-         <title>Unlikely suspect</title>
-         Whimsical romantic crime drama starring Janet
-         Hawthorne and Percy Trumpp.
-       </programme>
-     </schedule>
- </code>
-  
-                <p>O arquivo *.CSS que formata o <ins>XML</ins> anterior:</p>
+                </code>
+
+              <p>O arquivo *.CSS que formata o <ins>XML</ins> anterior:</p>
 
                   <code>
                       @media screen {<br>
@@ -156,27 +169,28 @@
                         }<br>
                   </code>
 
-          <h2>CSS e JavaScript</h2>
+              <h3>CSS e JavaScript</h3>
+              <p>Pop-up não-bloqueável</p>
 
-          Pop-up não-bloqueável
+                  <code>
 
-           <html>
-  <head>
-    <style type="text/css">
-  {
-        position: absolute;
-        top: 30%;
-        left: 30%;
-        width: 300px;
-        height: 150px;
-        padding: 20px 20px 20px 20px;
-        border-width: 2px;
-        border-style: solid;
-        background: #ffffa0;
-        display: none;
+                  &lt; html  &gt;
+                  &lt; head  &gt;
+                    &lt;style type="text/css"&gt;
+                  # popup  {
+                            position: absolute;
+                            top: 30%;
+                            left: 30%;
+                            width: 300px;
+                            height: 150px;
+                            padding: 20px 20px 20px 20px;
+                            border-width: 2px;
+                            border-style: solid;
+                            background: #ffffa0;
+                            display: none;
       }
-    </style>
-    <script type="text/javascript">
+    &lt;/style&gt;
+    &lt;script type="text/javascript"&gt;
       function abrir() {
         document.getElementById('popup').style.display = 'block';
         setTimeout ("fechar()", 3000);
