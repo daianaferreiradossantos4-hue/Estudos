@@ -8,4 +8,6 @@ $somadenotas += $argv[3] ?? 0;
 
 $media = $somadenotas / 3;
 
+echo  $media ;
+
 
